@@ -9,23 +9,47 @@ using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
 
-
-namespace connection_db
+namespace db1
 {
-    public partial class Form1 : Form
+    public partial class DataBase : Form
     {
-        public Form1()
+        public DataBase()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void DataBase_Load(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=kishan.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
-            string sql = "insert into kb values ('kishan')";
-            SqlDataAdapter da = new SqlDataAdapter(sql,cn);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
+
         }
+
+        string sql = "insert into kb values('"+ textname.text+"','"+txtroll.text+"' ,'"+txtcombo.text+"')";
+        SqlDataAdapter da = new SqlDataAdapter(sql , Class1.cs);
+        DataTable dt =new DataTable();
+        int a =DataTable.fill(dt);
+        if(a>=0)
+    {
+        MessageBox.show("Record inserted ","Database",MessageBoxButtons.OK,MessageBoxIcon.Information
+
+        private void bunClear_Click(object sender, EventArgs e)
+        {
+          Clear();
+        } 
     }
+    else
+{
+    MessageBox.show("There was Error ! ","Database",MessageBoxButtons.OK,MessageBoxIcon.Error );
+
 }
+    private void clear()
+{
+    txtRoll.text=" ";
+    txtName.text=" ";
+    cmbcouse = " ";
+    textName.Focuse;
+
+}
+
+
+    }
+
