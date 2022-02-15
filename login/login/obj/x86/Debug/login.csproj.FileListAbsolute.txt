@@ -1,0 +1,7 @@
+E:\Kishan Bhupta\C # programs windows\login\login\bin\Debug\login.exe
+E:\Kishan Bhupta\C # programs windows\login\login\bin\Debug\login.pdb
+E:\Kishan Bhupta\C # programs windows\login\login\obj\x86\Debug\login.Form1.resources
+E:\Kishan Bhupta\C # programs windows\login\login\obj\x86\Debug\login.Properties.Resources.resources
+E:\Kishan Bhupta\C # programs windows\login\login\obj\x86\Debug\login.csproj.GenerateResource.Cache
+E:\Kishan Bhupta\C # programs windows\login\login\obj\x86\Debug\login.exe
+E:\Kishan Bhupta\C # programs windows\login\login\obj\x86\Debug\login.pdb
